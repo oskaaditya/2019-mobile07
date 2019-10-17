@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        loadFragment(new FoodFragment());
+        loadFragment(new FoodFragment());
         BottomNavigationView bottomNavigationView = findViewById(R.id.navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
     }
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 fragment = new DiscountFragment();
                 break;
         }
-        return true;
+        return loadFragment(fragment);
     }
 
     @Override
