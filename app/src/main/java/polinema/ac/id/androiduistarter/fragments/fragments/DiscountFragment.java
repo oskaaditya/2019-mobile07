@@ -15,7 +15,7 @@ import polinema.ac.id.androiduistarter.R;
 
 public class DiscountFragment extends Fragment {
     public DiscountFragment() {
-        // Required empty public constructor
+        // Required empty public constructor'
     }
 
 
